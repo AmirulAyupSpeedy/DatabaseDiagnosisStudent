@@ -1,0 +1,18 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.btn-primary, .btn-success {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
