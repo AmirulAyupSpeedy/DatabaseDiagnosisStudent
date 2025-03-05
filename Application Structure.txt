@@ -1,0 +1,17 @@
+/student_diagnosis_app
+│── app.py
+│── models.py
+│── forms.py
+│── routes.py
+│── config.py
+│── database.db (Generated automatically)
+│── templates/
+│   ├── base.html
+│   ├── welcome.html
+│   ├── login.html
+│   ├── signup.html
+│   ├── dashboard.html
+│   ├── search.html
+│   ├── admin_panel.html
+│── static/
+│   ├── style.css

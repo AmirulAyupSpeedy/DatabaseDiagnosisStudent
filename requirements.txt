@@ -1,0 +1,7 @@
+flask
+gunicorn
+flask-login
+flask-wtf
+flask-sqlalchemy
+werkzeug
+psycopg2-binary  # Required for PostgreSQL if using it
