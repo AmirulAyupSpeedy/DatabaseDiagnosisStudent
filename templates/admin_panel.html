@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Admin Panel - Manage Student Records</h2>
+    
+    <h3>Add New Student</h3>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>{{ form.name.label }} {{ form.name() }}</p>
+        <p>{{ form.diagnosis.label }} {{ form.diagnosis() }}</p>
+        <p>{{ form.submit() }}</p>
+    </form>
+
+    <h3>Existing Students</h3>
+    <ul>
+        {% for student in students %}
+            <li>{{ student.name }} - {{ student.diagnosis }} 
+                <a href="{{ url_for('delete_student', id=student.id) }}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
